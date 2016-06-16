@@ -10,34 +10,49 @@
 
 @implementation Calculator
 
+@synthesize operand1, operand2, accumulator;
+
+-(id) init {
+    self = [super init];
+    
+    if (self) {
+        operand1 = [[Fraction alloc]init];
+        operand2 = [[Fraction alloc]init];
+        accumulator = [[Fraction alloc]init];
+    }
+    
+    return self;
+}
+
 -(void) clear
 {
-    _accumulator = 0;
+    accumulator.numerator = 0;
+    accumulator.denominator = 0;
 }
 
--(void) add:(double)value
-{
-    _accumulator += value;
-}
-
--(void) subtract:(double)value
-{
-    _accumulator -= value;
-}
-
--(void) multiply:(double)value
-{
-    _accumulator *=value;
-}
-
--(void) divide:(double)value
-{
-    if (value != 0.0)
-        _accumulator /= value;
-    else
+-(Fraction *) performOperation:(char)op {
+    Fraction *result;
+    
+    switch (op)
     {
-        NSLog(@"Division by zero.");
-        _accumulator = NAN;
+        case '+':
+            result = [operand1 add: operand2];
+            break;
+        case '-':
+            result = [operand1 sub: operand2];
+            break;
+        case '*':
+            result = [operand1 mul: operand2];
+            break;
+        case '/':
+            result = [operand1 div: operand2];
+            break;
     }
+    
+    accumulator.numerator = result.numerator;
+    accumulator.denominator = result.denominator;
+    
+    return accumulator;
 }
+
 @end

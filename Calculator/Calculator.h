@@ -7,16 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Fraction.h"
 
 @interface Calculator : NSObject
 
-@property double accumulator;
-// 누산기 메서드
+@property (strong, nonatomic) Fraction *operand1, *operand2, *accumulator;
+
+-(Fraction *) performOperation:(char)op;
 -(void) clear;
-// 산술 연산 메서스
--(void) add: (double) value;
--(void) subtract: (double) value;
--(void) multiply: (double) value;
--(void) divide: (double) value;
 
 @end

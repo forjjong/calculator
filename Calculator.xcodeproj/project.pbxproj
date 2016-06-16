@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C4025A4A1D1239EE00CE4456 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C4025A471D1239EE00CE4456 /* Calculator.m */; };
 		C4025A4B1D1239EE00CE4456 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = C4025A491D1239EE00CE4456 /* Fraction.m */; };
+		C4025A511D12899800CE4456 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4025A501D12899800CE4456 /* InfoViewController.m */; };
 		C46BE5111D1140CC004F22C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C46BE5101D1140CC004F22C5 /* main.m */; };
 		C46BE5141D1140CC004F22C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C46BE5131D1140CC004F22C5 /* AppDelegate.m */; };
 		C46BE5171D1140CC004F22C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C46BE5161D1140CC004F22C5 /* ViewController.m */; };
@@ -22,6 +23,8 @@
 		C4025A471D1239EE00CE4456 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		C4025A481D1239EE00CE4456 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
 		C4025A491D1239EE00CE4456 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
+		C4025A4F1D12899800CE4456 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		C4025A501D12899800CE4456 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		C46BE50C1D1140CC004F22C5 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C46BE5101D1140CC004F22C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C46BE5121D1140CC004F22C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +80,8 @@
 				C46BE51D1D1140CC004F22C5 /* LaunchScreen.storyboard */,
 				C46BE5201D1140CC004F22C5 /* Info.plist */,
 				C46BE50F1D1140CC004F22C5 /* Supporting Files */,
+				C4025A4F1D12899800CE4456 /* InfoViewController.h */,
+				C4025A501D12899800CE4456 /* InfoViewController.m */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			files = (
 				C46BE5171D1140CC004F22C5 /* ViewController.m in Sources */,
 				C4025A4A1D1239EE00CE4456 /* Calculator.m in Sources */,
+				C4025A511D12899800CE4456 /* InfoViewController.m in Sources */,
 				C46BE5141D1140CC004F22C5 /* AppDelegate.m in Sources */,
 				C46BE5111D1140CC004F22C5 /* main.m in Sources */,
 				C4025A4B1D1239EE00CE4456 /* Fraction.m in Sources */,

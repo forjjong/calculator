@@ -34,6 +34,11 @@
     int v = _denominator;
     int temp;
     
+    if (u == 0)
+        return;
+    else if (u<0)
+        u=-u;
+    
     while (v != 0)
     {
         temp = u % v;
