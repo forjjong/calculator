@@ -37,11 +37,16 @@
 - (IBAction)changeColor:(id)sender {
     NSLog(@"ThirdView Change Color");
     
-    changeMainBackColor([UIColor blueColor]);
+    //changeMainBackColor([UIColor blueColor]);
+    self.newChangeMainColor([UIColor blueColor]);
 }
 
 // delegate 를 사용하지 않을경우
 - (void) changeColorFunc:(void(^)(UIColor*))myFunc {
-    changeMainBackColor = myFunc;
+    //changeMainBackColor = myFunc;
+    self.newChangeMainColor = myFunc;
 }
+
+
+
 @end

@@ -13,7 +13,7 @@
     void(^changeMainBackColor) (UIColor*);
 }
 
-
+@property void(^newChangeMainColor)(UIColor*);
 
 - (IBAction)changeColor:(id)sender;
 
