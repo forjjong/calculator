@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "InfoViewController.h"
 
-@interface ViewController : UIViewController
+
+
+@interface ViewController : UIViewController <InfoViewProtocol>
 
 @property (weak, nonatomic) IBOutlet UILabel *display;
 
@@ -20,6 +23,7 @@
 
 - (IBAction)openInfoView:(id)sender;
 - (IBAction)openNewView:(id)sender;
+- (IBAction)unwindToViewController:(UIStoryboardSegue*)sender;
 
 //산술연산키
 - (IBAction)clickPlus:(id)sender;

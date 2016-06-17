@@ -186,19 +186,44 @@
 //    NSLog(@"viewWillDisappear");
 //}
 
+// 코드로 화면 전환1.
 - (IBAction)openInfoView:(id)sender {
     
     InfoViewController *infoViewContoller = [self.storyboard instantiateViewControllerWithIdentifier:@"infoview"];
     
+    infoViewContoller.delegate = self;
     
     infoViewContoller.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    
+    infoViewContoller.myString = self.display.text;
     
     [self presentViewController: infoViewContoller
                        animated:YES
                      completion:nil];
 }
 
+// 세그로 변경하는 방법2.
 - (IBAction)openNewView:(id)sender {
     [self performSegueWithIdentifier:@"blueview" sender:self];
+}
+
+- (IBAction)unwindToViewController:(UIStoryboardSegue*)sender {
+    NSLog(@"unwindToViewController");
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"Segue ID = %@", segue.identifier);
+    
+    
+    if ([segue.identifier isEqualToString:@"blueview"]) {
+        InfoViewController *infoView = [segue destinationViewController];
+        infoView.myString = @"HelloWorld";
+    }
+}
+
+-(void) changeColor:(UIColor *)newColor {
+    NSLog(@"changeColor");
+    
+    [self.view setBackgroundColor:newColor];
 }
 @end
