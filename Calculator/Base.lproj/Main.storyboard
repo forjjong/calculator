@@ -247,20 +247,20 @@
                                     <action selector="clickDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pNB-XP-U8h"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hms-qe-Man">
-                                <rect key="frame" x="20" y="528" width="72" height="34"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="openNewView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5PD-aO-mwj"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UM9-VH-vBW">
                                 <rect key="frame" x="228" y="531" width="72" height="29"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="info"/>
                                 <connections>
                                     <action selector="openInfoView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wWs-hx-ubz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hms-qe-Man">
+                                <rect key="frame" x="20" y="528" width="72" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="New"/>
+                                <connections>
+                                    <action selector="openNewView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5PD-aO-mwj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -330,10 +330,10 @@
             </objects>
             <point key="canvasLocation" x="662" y="350"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="E91-KV-9pt">
             <objects>
-                <viewController id="sPD-pj-m6D" sceneMemberID="viewController">
+                <viewController id="sPD-pj-m6D" customClass="ThirdViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e41-Va-c7n"/>
                         <viewControllerLayoutGuide type="bottom" id="vJm-D9-WhT"/>
@@ -359,6 +359,15 @@
                                 <connections>
                                     <action selector="openInfoView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7xQ-FM-v4Y"/>
                                     <segue destination="noP-7Y-q4y" kind="unwind" unwindAction="unwindToViewController:" id="bGR-ua-5Yd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLS-6x-2aP">
+                                <rect key="frame" x="113" y="374" width="94" height="30"/>
+                                <state key="normal" title="Change Color">
+                                    <color key="titleColor" red="0.97597340980000002" green="1" blue="0.9371490294" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeColor:" destination="sPD-pj-m6D" eventType="touchUpInside" id="vDn-e2-kLC"/>
                                 </connections>
                             </button>
                         </subviews>

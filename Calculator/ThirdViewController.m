@@ -1,25 +1,22 @@
 //
-//  InfoViewController.m
+//  ThirdViewController.m
 //  Calculator
 //
-//  Created by MF839-001 on 2016. 6. 16..
+//  Created by MF839-001 on 2016. 6. 17..
 //  Copyright © 2016년 MF839-001. All rights reserved.
 //
 
-#import "InfoViewController.h"
+#import "ThirdViewController.h"
 
-@interface InfoViewController ()
+@interface ThirdViewController ()
 
 @end
 
-@implementation InfoViewController
+@implementation ThirdViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"Text = %@", self.myString);
-    
-    self.myLable.text = self.myString;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,16 +34,14 @@
 }
 */
 
-- (IBAction)close:(id)sender {
-    [self.presentingViewController dismissViewControllerAnimated: YES completion:nil];
+- (IBAction)changeColor:(id)sender {
+    NSLog(@"ThirdView Change Color");
     
+    changeMainBackColor([UIColor blueColor]);
 }
 
-- (IBAction)changeColor:(id)sender {
-    
-    if ([self.delegate respondsToSelector:@selector(changeColor:)]) {
-        NSLog(@"(IBAction)changeColor:(id)sender");
-        [self.delegate changeColor:[UIColor redColor]];
-    }
+// delegate 를 사용하지 않을경우
+- (void) changeColorFunc:(void(^)(UIColor*))myFunc {
+    changeMainBackColor = myFunc;
 }
 @end

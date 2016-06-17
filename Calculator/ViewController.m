@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Calculator.h"
 #import "InfoViewController.h"
+#import "ThirdViewController.h"
 
 @interface ViewController ()
 
@@ -204,7 +205,7 @@
 
 // 세그로 변경하는 방법2.
 - (IBAction)openNewView:(id)sender {
-    [self performSegueWithIdentifier:@"blueview" sender:self];
+    [self performSegueWithIdentifier:@"purpleview" sender:self];
 }
 
 - (IBAction)unwindToViewController:(UIStoryboardSegue*)sender {
@@ -214,15 +215,26 @@
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSLog(@"Segue ID = %@", segue.identifier);
     
+//    InfoViewController *infoViewContoller = [self.storyboard instantiateViewControllerWithIdentifier:@"infoview"];
+//    
+//    infoViewContoller.delegate = self;
+    
     
     if ([segue.identifier isEqualToString:@"blueview"]) {
         InfoViewController *infoView = [segue destinationViewController];
         infoView.myString = @"HelloWorld";
     }
+    else if ([segue.identifier isEqualToString:@"purpleview"]) {
+        ThirdViewController *thirdView = [segue destinationViewController];
+        [thirdView changeColorFunc:^(UIColor *newColor) {
+            [self.view setBackgroundColor : newColor];
+        }];
+        
+    }
 }
 
 -(void) changeColor:(UIColor *)newColor {
-    NSLog(@"changeColor");
+    NSLog(@"MainView Change Color");
     
     [self.view setBackgroundColor:newColor];
 }

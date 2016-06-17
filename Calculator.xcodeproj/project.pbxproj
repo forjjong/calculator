@@ -16,6 +16,7 @@
 		C46BE51A1D1140CC004F22C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46BE5181D1140CC004F22C5 /* Main.storyboard */; };
 		C46BE51C1D1140CC004F22C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C46BE51B1D1140CC004F22C5 /* Assets.xcassets */; };
 		C46BE51F1D1140CC004F22C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46BE51D1D1140CC004F22C5 /* LaunchScreen.storyboard */; };
+		C4E2FB071D13B20700E71CF5 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E2FB061D13B20700E71CF5 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		C46BE51B1D1140CC004F22C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C46BE51E1D1140CC004F22C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C46BE5201D1140CC004F22C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4E2FB051D13B20700E71CF5 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		C4E2FB061D13B20700E71CF5 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				C46BE50F1D1140CC004F22C5 /* Supporting Files */,
 				C4025A4F1D12899800CE4456 /* InfoViewController.h */,
 				C4025A501D12899800CE4456 /* InfoViewController.m */,
+				C4E2FB051D13B20700E71CF5 /* ThirdViewController.h */,
+				C4E2FB061D13B20700E71CF5 /* ThirdViewController.m */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 				C46BE5141D1140CC004F22C5 /* AppDelegate.m in Sources */,
 				C46BE5111D1140CC004F22C5 /* main.m in Sources */,
 				C4025A4B1D1239EE00CE4456 /* Fraction.m in Sources */,
+				C4E2FB071D13B20700E71CF5 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
